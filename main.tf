@@ -1,3 +1,13 @@
+terraform {
+  cloud {
+    organization = "Jodson"
+
+    workspaces {
+      name = "Ap1"
+    }
+  }
+}
+
 # Define a região AWS a ser usada
 provider "aws" {
   region = "us-east-1"
